@@ -1,0 +1,8 @@
+[
+    {
+      "MQTTserver": "192.168.x.x",
+      "MQTTuser": "user",
+      "MQTTpass": "pass"
+    }
+  ]
+  
