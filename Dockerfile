@@ -17,7 +17,7 @@ COPY ./fermaxalarmserver.py /app
 RUN mkdir -p /app/config
 COPY ./config/config.json /app/config/config.json
 
-# Expone el puerto en el que se ejecutará la aplicación
+# Expose port management software
 EXPOSE 9800
 
 # Set Entrypoint
