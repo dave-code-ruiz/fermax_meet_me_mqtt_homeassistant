@@ -10,10 +10,13 @@ Fermax Meet Me Milo 1L --> Docker Fermax server Integration --> Mqtt --> Homeass
 
 You need to create docker image, downlad repository and launch
 
+```
 docker build -t fermaxserver -f Dockerfile .
+```
 
 Run this image with
 
+```
 docker run --name fermaxserver -tid \
   --restart unless-stopped \
   -p "9800:9800" \
@@ -21,17 +24,21 @@ docker run --name fermaxserver -tid \
   -v /etc/localtime:/etc/localtime:ro \
   -v /etc/timezone:/etc/timezone:ro \
   fermaxserver:latest
+```
 
 Change config.json with correct MQTT server info
 
+```
     {
       "MQTTserver": "192.168.x.x",
       "MQTTuser": "user",
       "MQTTpass": "pass"
     }
+```
 
 Create new binary_sensor in Homeassistant:
 
+```
 mqtt:
   binary_sensor:
     - name: motion_milo
@@ -39,3 +46,4 @@ mqtt:
       state_topic: "home-assistant/192.168.x.x/motion"
       payload_on: "ON"
       payload_off: "OFF"
+```
