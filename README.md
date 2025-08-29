@@ -47,3 +47,9 @@ mqtt:
       payload_on: "ON"
       payload_off: "OFF"
 ```
+
+In fermax net config change Ip Management Software and use docker server ip
+<img width="1249" height="480" alt="image" src="https://github.com/user-attachments/assets/938d3ca1-9298-42b7-851e-c30ef4e626f4" />
+
+
+
