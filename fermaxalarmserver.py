@@ -142,9 +142,9 @@ def main():
                         
                         # send_image_via_mqtt(filename, client_address[0])
 
-                    mqtt_publish(f"home-assistant/{client_address[0]}/movimiento", "ON")
+                    mqtt_publish(f"home-assistant/{client_address[0]}/motion", "ON")
                     time.sleep(5)
-                    mqtt_publish(f"home-assistant/{client_address[0]}/movimiento", "OFF")
+                    mqtt_publish(f"home-assistant/{client_address[0]}/motion", "OFF")
 
             except Exception as e:
                 logging.error(f"Error in main loop: {e}")
