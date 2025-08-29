@@ -36,7 +36,7 @@ Change config.json with correct MQTT server info
     }
 ```
 
-Create new binary_sensor in Homeassistant:
+Create new binary_sensor in Homeassistant, ip 192.168.x.x is Milo 1L Ip:
 
 ```
 mqtt:
